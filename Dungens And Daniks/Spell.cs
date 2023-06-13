@@ -11,6 +11,7 @@ namespace Dungens_And_Daniks
         Hil = 1,
         Defence = 2,
         Attack = 3,
+        Passive = 4,
         Empty = 0
     }
     internal enum CastType

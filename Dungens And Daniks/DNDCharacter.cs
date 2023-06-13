@@ -12,6 +12,10 @@ namespace Dungens_And_Daniks
     internal class DNDCharacter
     {   
         public string NameOfCharacter { get; set; }
+        public int Gold { get; set; }
+        public int HP { get; set; }
+        public int CurrentHP { get; set; }
+        public int Armor { get; set; } 
         public int Level { get; set; }
         public string Class { get; set; }
         public string Origin { get; set; }
@@ -25,14 +29,15 @@ namespace Dungens_And_Daniks
         public string History { get; set; }
         public int HealthDice { get; set; }
         public List<string> Languages { get; set; }
-
+        public Stats StatsOfCharacter { get; set; }
+        public List<Item> Items { get; set; }
+        public bool DeathDice { get; set; }
         public DNDCharacter()
         {
             Spells = new List<Spell>();
             Languages = new List<string>();
+            Items = new List<Item>();
             NameOfCharacter = "Unknown";
-            Level = 0;
-            HealthDice = 0;
             Class = "???";
             Origin = "???";
             Race = "???";
@@ -42,6 +47,9 @@ namespace Dungens_And_Daniks
             Bonds = "???";
             Defects = "???";
             History = "???";
+            StatsOfCharacter = new Stats();
+            Gold = Level = HealthDice = Armor = HP = CurrentHP = 0;
+            DeathDice = true;
         }
         public string GetJson()
         {
