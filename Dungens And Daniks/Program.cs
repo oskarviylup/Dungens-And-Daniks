@@ -195,7 +195,7 @@ namespace Dungens_And_Daniks
                 Console.WriteLine("(С) - Создание персонажа");
                 Console.WriteLine("(R) - Редактирование персонажей");
                 Console.WriteLine("(S) - Сохранить изменения");
-                Console.WriteLine("(E) - Выход в главное меню");
+                Console.WriteLine("(Escape) - Выход в главное меню");
                 var key = Console.ReadKey(true);
                 if (key.Key == ConsoleKey.C)
                 {
@@ -209,7 +209,7 @@ namespace Dungens_And_Daniks
                 {
                     SaveChanges();
                 }
-                else if (key.Key == ConsoleKey.E)
+                else if (key.Key == ConsoleKey.Escape)
                 {
                     MMenu();
                 }
