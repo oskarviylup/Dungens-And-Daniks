@@ -63,7 +63,8 @@ namespace Dungens_And_Daniks
                 }
                 if (IsInit)
                 { 
-                    using (Stream)
+                    Stream.Close();
+                    using (Stream = new FileStream("log.json", FileMode.Open))
                     {
                         await JsonSerializer.SerializeAsync<List<string>>(Stream, JsonList);
                     }

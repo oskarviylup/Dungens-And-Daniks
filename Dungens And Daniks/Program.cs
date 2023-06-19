@@ -75,7 +75,7 @@ namespace Dungens_And_Daniks
             NewCharacter.Defects = tmp;
             Console.WriteLine("Напишите историю персонажа");
             tmp = Console.ReadLine(); Console.WriteLine();
-            NewCharacter.History = tmp;
+            NewCharacter.History = tmp; 
             Console.WriteLine("Введите кубики здоровья (целое положительное число)");
             tmp = Console.ReadLine(); Console.WriteLine();
             NewCharacter.HealthDice = int.Parse(tmp);
@@ -236,10 +236,6 @@ namespace Dungens_And_Daniks
                 "\r\n█▀▀▄ █░░█   ▒█░▄▀ █▀▀█ █▀▀█ █▀▀▄ █▀▀█ █▀▀▄ " +
                 "\r\n█▀▀▄ █▄▄█   ▒█▀▄░ █▄▄█ █▄▄▀ █░░█ █▄▄█ █░░█ " +
                 "\r\n▀▀▀░ ▄▄▄█   ▒█░▒█ ▀░░▀ ▀░▀▀ ▀▀▀░ ▀░░▀ ▀░░▀");
-            if(CharacterList.Count > 0)
-            {
-                Console.WriteLine("da");
-            }
             Console.ReadKey();
             MMenu();
         }
