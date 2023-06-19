@@ -173,6 +173,10 @@ namespace Dungens_And_Daniks
             tmp2 = int.Parse(Console.ReadLine()); Console.WriteLine();
             NewCharacter.StatsOfCharacter.Charisma = new Tuple<int, int>(tmp1, tmp2);
 
+            Console.WriteLine("Введите бонус умения персонажа (целое положительное число)");
+            tmp1 = int.Parse(Console.ReadLine()); Console.WriteLine();
+            NewCharacter.StatsOfCharacter.SkillBonus = tmp1;
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(
                 "\r\n▒█▀▀█ ▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀▀█   ▒█▀▀▀ ▒█▄░▒█ ▀▀█▀▀ ▒█▀▀▀ ▒█▀▀█   ▀▀█▀▀ ▒█▀▀▀█   ▒█▀▀▀ ▀█▀ ▒█▄░▒█ ▀█▀ ▒█▀▀▀█ ▒█░▒█ " +
